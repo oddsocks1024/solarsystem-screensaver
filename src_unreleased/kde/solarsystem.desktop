@@ -1,0 +1,23 @@
+[Desktop Entry]
+Name=Solar System (GL)
+Comment=The Solar System Screen Saver
+TryExec=solarsystem
+Exec=solarsystem
+StartupNotify=false
+Terminal=false
+Type=Service
+Icon=kscreensaver
+X-KDE-ServiceTypes=ScreenSaver
+X-KDE-Category=OpenGL Screen Savers
+X-KDE-Type=OpenGL
+Actions=InWindow;Root;
+
+[Desktop Action InWindow]
+Exec=solarsystem -window-id %w
+Name=Display in specified window
+
+[Desktop Action Root]
+Exec=solarsystem -window-id %w
+Name=Display in Root Window
+NoDisplay=true
+
