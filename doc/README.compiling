@@ -1,0 +1,235 @@
+                            COMPILING SOLARSYSTEM
+                            =====================
+
+1. GENERAL REQUIREMENTS
+=======================
+Solarsystem has the following compile and install requirements. Operating
+System specific details are provided further in this document.
+
+    * OpenGL and Development Files
+    * X Server and Development Files
+    * SDL and Development Files
+    * SDL_image (with PNG support) and Development Files
+    * C and C++ Compiler (usually gcc and g++)
+    * Make (usually GNU make)
+    * pkgconfig (Required for Gnome support)
+    * gnome-screensaver (Required for Gnome support)
+    * kde4-config (Required for KDE 4 support)
+    * Xscreensaver (Required for XScreensaver support)
+
+
+2. GENERAL COMPILATION INSTRUCTIONS
+===================================
+Operating system specific details are provided further in this document.
+
+To build and install type:
+    ./configure --prefix=/usr
+    make
+
+And with root privledges:
+    make install
+
+Support for Xscreensaver requires manual installation. Consult
+README.xscreensaver
+
+
+3. FEDORA LINUX
+===============
+Ensure you have the following packages installed, or the equivalent for your
+version of Fedora.
+
+    * gcc
+    * gcc-c++
+    * libX11-devel
+    * SDL-devel
+    * SDL_image-devel
+    * mesa-libGL-devel
+    * mesa-libGLU-devel
+    * pkgconfig (required for Gnome support only)
+    * gnome-screensaver (required for Gnome support only)
+    * kdelibs (required for KDE support only)
+
+To build and install type:
+    ./configure --prefix=/usr
+    make
+
+With root privledges:
+    make install
+
+Support for Xscreensaver requires manual installation. Consult
+README.xscreensaver
+
+
+4. FREEBSD
+==========
+Ensure you have the following packages installed, or the equivalent for your
+version of FreeBSD.
+
+    * libGL
+    * libGLU
+    * libX11
+    * sdl
+    * sdl_image
+    * pkg-config (required for Gnome support only)
+    * gnome-screensaver (required for Gnome support only)
+    * kdelibs (>= V4 required for KDE support only)
+
+To build and install type:
+    ./configure
+    make
+
+With root privledges:
+    make install
+
+Support for Xscreensaver requires manual installation. Consult
+README.xscreensaver
+
+
+5. MANDRIVA LINUX
+=================
+Ensure you have the following packages installed, or the equivalent for your
+version of Mandriva.
+
+    * gcc
+    * gcc-c++
+    * lib64mesagl1-devel (or libmesagl1-devel)
+    * lib64mesaglu1-devel (or libmesaglu1-devel)
+    * lib64x11_6-devel  (or libx11_6-devel)
+    * lib64SDL-devel (or libSDL-devel)
+    * lib64SDL_image-devel (or libSDL_image-devel)
+    * pkgconfig (required for Gnome support only)
+    * gnome-screensaver (required for Gnome support only)
+    * kdelibs4-core (required for KDE support only)
+
+To build and install type:
+    ./configure --prefix=/usr
+    make
+
+With root privledges:
+    make install
+
+Support for Xscreensaver requires manual installation. Consult
+README.xscreensaver
+
+
+6. OPENBSD
+==========
+Ensure you have the following packages installed, or the equivalent for your
+version of OpenBSD.
+
+    * sdl
+    * sdl-image
+    * X Development Environment
+    * gnome-screensaver (required for Gnome support only)
+
+To build and install type:
+    ./configure
+    make
+
+With root privledges:
+    make install
+
+Support for Xscreensaver requires manual installation. Consult
+README.xscreensaver
+
+
+7. OPENSOLARIS / SOLARIS / OPENINDIANA
+==============
+Ensure you have the following packages installed, or the equivalent for your
+version of OpenSolaris.
+
+    * FSWxorg-headers
+    * SUNWxorg-mesa
+
+OpenSolaris does not currently ship with SDL_image, so you will have to obtain
+this yourself, either by downloading it and building from source or using a
+3rd party package. These instructions assume you have installed SDL and
+SDL_image from BlastWave or OpenCSW
+
+    * CSWlibsdl
+    * CSWlibsdl-dev
+    * CSWsdlimage
+
+To build and install type:
+    ./configure --with-sdl-prefix=/opt/csw --prefix=/usr
+    make
+
+With root privledges:
+    make install
+
+Note: Although OpenSolaris ships with Gnome, it does not use the
+gnome-screensaver, but instead uses XScreensaver. Support for Xscreensaver
+requires manual installation. Consult README.xscreensaver
+
+
+8. UBUNTU AND MINT LINUX
+========================
+Ensure you have the following packages installed, or the equivalent for your
+version of Ubuntu or Mint.
+
+    * libgl1-mesa-dev
+    * libgl1-mesa-glx
+    * libglu1-mesa
+    * libglu1-mesa-dev
+    * libsdl<version>-dev       (eg libsdl1.2-dev)
+    * libsdl<version>           (eg libsdl1.2)
+    * libsdl-image<version>     (eg libsdl-image1.2
+    * libsdl-image<version>-dev (eg libsdl-image1.2-dev)
+    * mesa-common-dev
+    * pkg-config (required for Gnome support only)
+    * gnome-screensaver (required for Gnome support only)
+    * kdelibs-bin (required for KDE support only)
+
+To build and install type:
+    ./configure --prefix=/usr
+    make
+
+With root privledges:
+    make install
+
+Support for Xscreensaver requires manual installation. Consult
+README.xscreensaver
+
+
+9. OPENSUSE LINUX
+=================
+Ensure you have the following packages installed, or the equivalent for your
+version of Fedora.
+
+    * gcc
+    * gcc-c++
+    * xorg-x11-libx11-devel
+    * libSDL-devel
+    * libSDL_image-devel
+    * make
+    * Mesa-devel
+    * pkg-config (required for Gnome support only)
+    * gnome-screensaver (required for Gnome support only)
+    * kdelibs4-core (required for KDE support only)
+
+To build and install type:
+    ./configure --prefix=/usr
+    make
+
+With root privledges:
+    make install
+
+Support for Xscreensaver requires manual installation. Consult
+README.xscreensaver
+
+
+10. OTHER OPERATING SYSTEMS
+===========================
+Solarsystem is likely to compile on the following, although they have not been
+tested. Where possible, the use of GCC and the GNU build utilities are
+recommended.
+
+    * NetBSD (Also see the OpenBSD / FreeBSD notes)
+    * Solaris (Also see the OpenSolaris notes)
+    * Linux - Any Distro (Also see the Fedora, Mandriva, Ubuntu notes)
+
+Solarsystem is highly unlikely to compile and run on these operating systems.
+
+    * Darwin
+    * MacOS X
+    * Windows

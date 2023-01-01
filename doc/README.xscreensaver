@@ -1,0 +1,43 @@
+Installing XScreensaver Support
+-------------------------------
+
+There appears to be no reliable way to detect where XScreensaver keeps its
+files, so at the moment this is a manual process. When copying files, this
+document is refering to the files that reside in the 'xscreensaver'
+directory that is distributed with Solarsystem.
+
+1. First ensure that you've already completed the standard build and install
+   process. (ie you've already done 'make install' as root)
+
+
+2. Copy 'solarsystem.xml' from Solarsystem's xscreensaver directory to your
+   XScreensaver's config directory.
+
+        Potential config locations:
+        * /usr/share/xscreensaver/config/
+        * /usr/local/share/xscreensaver/config/
+        * /usr/x11/lib/xscreensaver/config/
+        * /usr/x11/lib/xscreesaver/config/control-center-2.0/
+
+
+3. Create a symlink to the solarsystem binary in the xscreensaver hack
+   directory. The binary was probably installed in /usr/bin or /usr/local/bin
+
+        Potential hack locations:
+        * /usr/libexec/xscreensaver
+        * /usr/x11/lib/xscreensaver/hacks
+        * /usr/lib/xscreensaver/hacks
+
+
+4. Added the contents of "solarsystem.conf" to the appropriate section of the
+   xscreensaver master configuration file.
+
+        Potential master config locations:
+        * /usr/share/xscreensaver/hacks.conf.d/xscreensaver.conf
+        * /usr/local/share/xscreensaver/hacks.conf.d/xscreensaver.conf
+        * /usr/X11/lib/X11/app-defaults/XScreenSaver
+
+
+5. On some distributions you may need to run the command
+   'update-xscreensaver-hacks' after completing the above steps. If you do not
+    have this command, then it is not necessary.

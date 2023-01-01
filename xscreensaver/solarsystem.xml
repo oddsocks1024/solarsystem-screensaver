@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="solarsystem" _label="SolarSystem">
+
+  <command arg=""/>
+
+  <_description>
+A screensaver for Linux and UNIX that displays the planets of the Solar System
+(inc Pluto). A random planet is chosen and rotated on screen against a
+starfield background. As the planet orbits the sun, it transitions from light
+into darkness and a corona effect appears.
+
+Written by Ian Chapman; 2009.
+  </_description>
+</screensaver>

@@ -1,0 +1,27 @@
+Solarsystem Authors
+-------------------
+Ian Chapman <packages[AT]amiga-hardware.com>
+Feel free to send suggested patches or contributions to the above address,
+please include "Solarsystem" in the subject line.
+
+Website: http://software.amiga-hardware.com
+
+Textures
+--------
+The following planet textures were based on images from JPL, although most
+have undergone alteration by myself. These images are essentially copyright
+free as stated by JPL in their image use policy.
+http://www.jpl.nasa.gov/imagepolicy/
+
+"Courtesy NASA/JPL-Caltech."
+Mercury
+Venus
+Jupiter
+Saturn
+Neptune
+Pluto
+
+The earth textures are public domain and obtained from:
+http://www.shadedrelief.com
+
+All other textures were created by me and are public domain.

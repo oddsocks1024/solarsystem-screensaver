@@ -1,0 +1,16 @@
+For an introduction to Solarsystem, see:
+	* doc/README
+
+For instructions on compilation and installation, including specific
+instructions for Fedora, FreeBSD, Mandriva, OpenBSD, OpenSolaris and Ubuntu,
+see:
+	* doc/README.compiling
+
+Xscreensaver support requires manual installation, please see:
+	* doc/README.xscreensaver
+
+For a list of changes in this release, please see:
+	* ChangeLog
+
+For contact details, please see:
+	* AUTHORS

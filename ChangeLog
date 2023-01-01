@@ -1,0 +1,21 @@
+V0.2.2: 2012-06-01
+    - Fixed: Build time fixes for newer distros which use --as-needed as a
+             default GCC option
+
+
+V0.2.1: 2011-03-14
+    - Fixed: Improved building scripts for newer distros
+    - Fixed: Now doesn't display cursor. Thanks to "druciferre"
+
+
+V0.2: 2010-06-27
+    - Fixed: Minor change to the build scripts to fix compilation on distros
+             using the new DSO changes to ld (eg Fedora 13).
+    - Added: Smoothed starfield points for OpenGL/Hardware implementations
+             which support it.
+    - Fixed: Don't show in KDE 'Lost & Found' menu if both KDE and Gnome
+             versions are installed.
+
+
+V0.1: 2009-09-18
+    - Inital Release

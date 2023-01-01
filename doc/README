@@ -1,0 +1,57 @@
+THE SOLARSYSTEM SCREENSAVER
+
+1. WHAT IS IT?
+A screensaver for Linux and UNIX that displays the planets of the Solar System
+(inc Pluto). A random planet is chosen and rotated on screen against a
+starfield background. As the planet orbits the sun, it transitions from light
+into darkness and a corona effect appears.
+
+
+2. HOW TO USE SOLARSYSTEM
+If Solarsystem compiles and installs successfully for you, then it should be
+available from the gnome-screensaver-preferences program or available in the
+KDE screensaver preferences. Xscreensaver is supported, but requires manual
+installation.
+
+
+3. FAQ
+
+    * Which screensaver systems are supported?
+    - Officially Gnome 2, KDE 4 and XScreensaver. Others might work but have
+      not been tested.
+
+    * I can't access the configuration or setup options, why?
+    - Solarsystem does not currently have support for configuring any options. This
+      is very likely to be added in the future. You can however change various
+      options at compile time. Please see the solarsystem.h file in the src
+      directory
+
+    * I'm running KDE or Gnome and Solarsystem compiled and installed, but I can't
+      find it in the screensaver list. Any ideas?
+    - Some distributions replace Gnome's or KDE's native screensaver system
+      with Xscreensaver. Try following install instructions for Xscreensaver
+    - You may need to specify the correct install prefix with configure.
+      Solarsystem is installed in /usr/local by default if no prefix is specified,
+      which may be incorrect for your operating system.
+
+    * Why does support for Xscreensaver need to be installed manually?
+    - Xscreensaver does not appear to provide a mechanism to detect where its
+      screensavers and configuration files should be installed and I haven't
+      found a method which works safely and reliably across all supported
+      operating systems.
+
+    * Is KDE 3 supported?
+    - Not officially. Solarsystem's build system is not setup for KDE 3.
+      However with some manual intervention you can probably get it working.
+
+    * Solarsystem runs really slowly, why?
+    - Solarsystem makes use of OpenGL. The most likely cause is that you don't
+      have hardware accelerated 3D and therefore most of the work is being
+      handled by the CPU instead of the GPU. Usually this is a misconfigured
+      system, or your graphics chipset is too old.
+
+    * Where do I send bug reports?
+    - See the AUTHORS file.
+
+    * Where do I send patches/contributions?
+    - See the AUTHORS file.
